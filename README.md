@@ -1,0 +1,1 @@
+mongodb bulk manager, supports only update operation
