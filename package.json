@@ -1,11 +1,14 @@
 {
   "name": "bulkmanager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "mongodb bulk manager, supports only update operation",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "author": "gulet",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.2.7"
+  }
 }
