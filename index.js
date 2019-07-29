@@ -1,3 +1,5 @@
+'use strict';
+
 const { MongoClient } = require('mongodb');
 
 /**
@@ -42,7 +44,7 @@ function BulkUpdateManager(clientOrUrl, collectionName, operationsLimit = 0, isO
 
     return res;
   }
-  executeIfLimitReached = async () => {
+  const executeIfLimitReached = async () => {
     if (!limit) {
       return;
     }
