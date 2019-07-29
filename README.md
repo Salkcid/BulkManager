@@ -41,7 +41,6 @@ NOTE: call `closeConnection()` method to close conection with mongodb
   const { MongoClient } = require('mongodb');
 
   const url = 'mongodb://localhost:27017/<db_name>';
-  const client = await MongoClient.connect(url, { useNewUrlParser: true });
 
   const bulk2 = new BulkManager(url, collectionName);
 
