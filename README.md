@@ -42,7 +42,7 @@ NOTE: call `closeConnection()` method to close conection with mongodb
 
   const url = 'mongodb://localhost:27017/<db_name>';
 
-  const bulk2 = new BulkManager(url, collectionName);
+  const bulk2 = new BulkManager(url, 'db_collection_name');
 
   await bulk2.add({ id: 123 }, {
     $set: { updatedAt: new Date() }, $setOnInsert: { createdAt: new Date() },
